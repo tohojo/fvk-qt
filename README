@@ -1,0 +1,6 @@
+To compile:
+
+You'll need development packages (on Ubuntu at least qt4-dev-tools, qt4-designer, g++).
+Run `qmake` (`qmake-qt4` on Ubuntu) to create a Makefile.
+
+Run `make` to compile.

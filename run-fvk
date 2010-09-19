@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DIR=`dirname $0`
+cd $DIR
+./fvk database.sqlite -geometry 1024x768+0+0

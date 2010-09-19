@@ -1,0 +1,688 @@
+<ui version="4.0" >
+ <author>Toke Høiland-Jørgensen</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1022</width>
+    <height>774</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>NatCafé FVK-system v1.1.9</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <item row="0" column="0" colspan="2" >
+     <widget class="QLabel" name="label_4" >
+      <property name="font" >
+       <font>
+        <family>DejaVu Sans</family>
+        <pointsize>28</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text" >
+       <string>NatCafé FVK-system</string>
+      </property>
+      <property name="textFormat" >
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="alignment" >
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2" >
+     <widget class="QLabel" name="versionLabel" >
+      <property name="font" >
+       <font>
+        <family>DejaVu Sans</family>
+       </font>
+      </property>
+      <property name="text" >
+       <string>Version 1.1.9</string>
+      </property>
+      <property name="textFormat" >
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="alignment" >
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item rowspan="2" row="2" column="0" >
+     <widget class="QGroupBox" name="groupBox_3" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Preferred" hsizetype="Fixed" >
+        <horstretch>2</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font" >
+       <font>
+        <family>DejaVu Sans</family>
+       </font>
+      </property>
+      <property name="title" >
+       <string>Varer</string>
+      </property>
+      <layout class="QVBoxLayout" >
+       <item>
+        <widget class="QTableView" name="itemsView" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="alternatingRowColors" >
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid" >
+          <bool>false</bool>
+         </property>
+         <property name="sortingEnabled" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1" >
+     <widget class="QGroupBox" name="groupBox_2" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
+        <horstretch>2</horstretch>
+        <verstretch>2</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font" >
+       <font>
+        <family>DejaVu Sans</family>
+       </font>
+      </property>
+      <property name="title" >
+       <string>Kunde-info</string>
+      </property>
+      <layout class="QGridLayout" >
+       <item row="0" column="0" >
+        <widget class="QLabel" name="label_6" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Navn:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="3" >
+        <widget class="QLabel" name="nameField" >
+         <property name="font" >
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Ingen bruger indlæst</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item rowspan="8" row="0" column="4" >
+        <widget class="QWidget" native="1" name="widget" >
+         <layout class="QVBoxLayout" >
+          <item>
+           <widget class="QLabel" name="label_9" >
+            <property name="font" >
+             <font>
+              <family>DejaVu Sans</family>
+             </font>
+            </property>
+            <property name="text" >
+             <string>Tidligere transaktioner:</string>
+            </property>
+            <property name="textFormat" >
+             <enum>Qt::PlainText</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableView" name="transactionView" >
+            <property name="font" >
+             <font>
+              <family>DejaVu Sans</family>
+             </font>
+            </property>
+            <property name="alternatingRowColors" >
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode" >
+             <enum>QAbstractItemView::NoSelection</enum>
+            </property>
+            <property name="showGrid" >
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="label_7" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Hus:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="2" >
+        <widget class="QLabel" name="houseField" >
+         <property name="font" >
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" >
+        <widget class="QLabel" name="label_8" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Kortnr:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="3" >
+        <widget class="QLabel" name="cardnoField" >
+         <property name="font" >
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0" >
+        <widget class="QLabel" name="label_5" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Kredit:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2" colspan="2" >
+        <widget class="QLabel" name="creditLabel" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Nej</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2" >
+        <widget class="QLabel" name="label_10" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Totalt forbrug:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3" >
+        <widget class="QLabel" name="totalSpendingLabel" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="lineWidth" >
+          <number>-3</number>
+         </property>
+         <property name="text" >
+          <string>0.00 kr</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="2" >
+        <widget class="QLabel" name="label_11" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Saldo:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3" >
+        <widget class="QLabel" name="balanceLabel" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>0.00 kr</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="4" >
+        <widget class="QPushButton" name="addMoneyButton" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>&amp;Indsæt penge</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="1" >
+     <widget class="QGroupBox" name="groupBox" >
+      <property name="sizePolicy" >
+       <sizepolicy vsizetype="Preferred" hsizetype="Expanding" >
+        <horstretch>0</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font" >
+       <font>
+        <family>DejaVu Sans</family>
+       </font>
+      </property>
+      <property name="title" >
+       <string>Foretag ordre</string>
+      </property>
+      <layout class="QGridLayout" >
+       <item row="0" column="3" >
+        <widget class="QLabel" name="label_2" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Nuværende ordre:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="label_3" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Antal:</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QSpinBox" name="countField" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="minimum" >
+          <number>1</number>
+         </property>
+         <property name="maximum" >
+          <number>1337</number>
+         </property>
+        </widget>
+       </item>
+       <item rowspan="4" row="1" column="3" >
+        <widget class="QTableView" name="orderView" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="alternatingRowColors" >
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode" >
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid" >
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" >
+        <widget class="QPushButton" name="removeButton" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>&lt; &amp;Fjern</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" >
+        <widget class="QPushButton" name="addButton" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>&amp;Tilføj ></string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2" >
+        <spacer>
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>30</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="0" colspan="2" >
+        <widget class="QLabel" name="totalPriceLabel" >
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Total pris: 0000.00 kr.</string>
+         </property>
+         <property name="textFormat" >
+          <enum>Qt::PlainText</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2" >
+        <widget class="QPushButton" name="doOrderButton" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Fixed" hsizetype="Minimum" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font" >
+          <font>
+           <family>DejaVu Sans</family>
+          </font>
+         </property>
+         <property name="text" >
+          <string>&amp;Udfør ordre</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1022</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAdmin" >
+    <property name="title" >
+     <string>&amp;Admin</string>
+    </property>
+    <addaction name="actionAddUser" />
+    <addaction name="actionEditUsers" />
+    <addaction name="separator" />
+    <addaction name="actionEditItems" />
+    <addaction name="separator" />
+    <addaction name="actionStatistics" />
+   </widget>
+   <widget class="QMenu" name="menu_Hj_lp" >
+    <property name="title" >
+     <string>&amp;Hjælp</string>
+    </property>
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuFiler" >
+    <property name="title" >
+     <string>&amp;Filer</string>
+    </property>
+    <addaction name="actionLoadUser" />
+    <addaction name="separator" />
+    <addaction name="actionQuit" />
+   </widget>
+   <addaction name="menuFiler" />
+   <addaction name="menuAdmin" />
+   <addaction name="menu_Hj_lp" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBar" >
+   <property name="windowTitle" >
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionQuit" >
+   <property name="text" >
+    <string>&amp;Afslut</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="shortcutContext" >
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+   <property name="menuRole" >
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+  <action name="actionAddUser" >
+   <property name="text" >
+    <string>&amp;Opret ny bruger</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionEditItems" >
+   <property name="text" >
+    <string>Ret &amp;varer</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionStatistics" >
+   <property name="text" >
+    <string>&amp;Statistik</string>
+   </property>
+  </action>
+  <action name="actionEditUsers" >
+   <property name="text" >
+    <string>Ret &amp;brugere</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionLoadUser" >
+   <property name="text" >
+    <string>&amp;Indlæs bruger</string>
+   </property>
+   <property name="shortcut" >
+    <string>F2</string>
+   </property>
+   <property name="shortcutContext" >
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="text" >
+    <string>&amp;Om NatCafé FVK</string>
+   </property>
+   <property name="menuRole" >
+    <enum>QAction::AboutRole</enum>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>addMoneyButton</tabstop>
+  <tabstop>countField</tabstop>
+  <tabstop>removeButton</tabstop>
+  <tabstop>addButton</tabstop>
+  <tabstop>doOrderButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>420</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

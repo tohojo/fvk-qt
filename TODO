@@ -1,0 +1,31 @@
+FVK TODO-list
+Toke Høiland-Jørgensen, toke@toke.dk
+Sidst opdateret 2007-09-17
+vim:fileencoding=utf8
+
+
+FEATURES:
+Popupbox til at indlæse brugere manuelt.
+Mulighed for at indlæse en bruger direkte fra brugerlisten.
+En "admin-mode" til når der skal laves mange ændringer så man ikke skal indlæse 
+	adminkort hele tiden.
+Udvidet statistik:
+	- Mulighed for at se hvilke brugere der har været aktive for nyligt, for at 
+	  finde ud af hvor mange penge der står på aktive brugeres konti.
+	- Mulighed for at lave statistikker over forbrug pr bruger/vare/i alt for
+	  givne perioder (til fx statistik på rustur).
+En filter-funktion til brugerlisten så det bliver nemmere at finde folk.
+Stregsystem-indtastning: Vælg en række brugere (fx alle i et bestemt hus) og giv
+	nem mulighed for at indtaste forbrug fra et stregsystem.
+Layout: Listen over varer skal være højere så der kan stå flere på skærmen på én
+	gang - gør det nemmere at finde varerne.
+
+
+BUGS:
+Nulstil brugers saldo virker ikke.
+Hvis en bruger har kredit og saldoen går i minus skal skriften blive rød.
+Ved ret varer opstår der ind imellem dupletter / en række tomme varer.
+Nogle gange indlæses kortet flere gange/forkert - skal behandles bedre/mindre 
+	forvirrende.
+Ved indlæsning af brugerlisten medfører en dobbeltindlæsning af kort at den 
+	første brugers navn rettes.

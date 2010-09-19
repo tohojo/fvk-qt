@@ -1,0 +1,333 @@
+<ui version="4.0" >
+ <class>AddUserForm</class>
+ <widget class="QWidget" name="AddUserForm" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>316</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Opret ny bruger</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="leftMargin" >
+    <number>9</number>
+   </property>
+   <property name="topMargin" >
+    <number>9</number>
+   </property>
+   <property name="rightMargin" >
+    <number>9</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>9</number>
+   </property>
+   <property name="horizontalSpacing" >
+    <number>6</number>
+   </property>
+   <property name="verticalSpacing" >
+    <number>6</number>
+   </property>
+   <item row="3" column="0" >
+    <widget class="QWidget" native="1" name="widget_2" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font" >
+      <font>
+       <family>DejaVu Sans</family>
+      </font>
+     </property>
+     <layout class="QHBoxLayout" >
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <property name="leftMargin" >
+       <number>9</number>
+      </property>
+      <property name="topMargin" >
+       <number>9</number>
+      </property>
+      <property name="rightMargin" >
+       <number>9</number>
+      </property>
+      <property name="bottomMargin" >
+       <number>9</number>
+      </property>
+      <item>
+       <spacer>
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="createButton" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&amp;Opret</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cancelButton" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&amp;Annuller</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <spacer>
+     <property name="font" >
+      <font>
+       <family>DejaVu Sans</family>
+      </font>
+     </property>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QWidget" native="1" name="widget" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Minimum" hsizetype="Preferred" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font" >
+      <font>
+       <family>DejaVu Sans</family>
+      </font>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="leftMargin" >
+       <number>9</number>
+      </property>
+      <property name="topMargin" >
+       <number>9</number>
+      </property>
+      <property name="rightMargin" >
+       <number>9</number>
+      </property>
+      <property name="bottomMargin" >
+       <number>9</number>
+      </property>
+      <property name="horizontalSpacing" >
+       <number>6</number>
+      </property>
+      <property name="verticalSpacing" >
+       <number>6</number>
+      </property>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="label_4" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&amp;Kort:</string>
+        </property>
+        <property name="textFormat" >
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="buddy" >
+         <cstring>cardNoField</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="label_2" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&amp;Navn:</string>
+        </property>
+        <property name="textFormat" >
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="buddy" >
+         <cstring>nameField</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="label_3" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="text" >
+         <string>&amp;Hus:</string>
+        </property>
+        <property name="textFormat" >
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="buddy" >
+         <cstring>houseField</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" >
+       <spacer>
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1" colspan="2" >
+       <widget class="QLineEdit" name="cardNoField" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2" >
+       <widget class="QLineEdit" name="nameField" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLineEdit" name="houseField" >
+        <property name="font" >
+         <font>
+          <family>DejaVu Sans</family>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="sizePolicy" >
+      <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font" >
+      <font>
+       <family>DejaVu Sans</family>
+       <pointsize>22</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Opret ny bruger</string>
+     </property>
+     <property name="textFormat" >
+      <enum>Qt::PlainText</enum>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>nameField</tabstop>
+  <tabstop>houseField</tabstop>
+  <tabstop>cardNoField</tabstop>
+  <tabstop>createButton</tabstop>
+  <tabstop>cancelButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AddUserForm</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>198</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,9 @@
+*.tar.gz
+*.swp
+*~
+*.o
+fvk
+.svn
+tags
+Makefile
+database.sqlite
